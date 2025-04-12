@@ -26,4 +26,4 @@ COPY --from=publish /app .
 
 #ENV AppSettings__DebugMode=True
 ENV ASPNETCORE_URLS=http://+:6000
-ENTRYPOINT ["dotnet", "WebAdmin.dll"]
+ENTRYPOINT ["dotnet", "Mobiplus.dll"]
