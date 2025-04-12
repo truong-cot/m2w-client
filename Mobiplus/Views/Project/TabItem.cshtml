@@ -1,0 +1,24 @@
+﻿
+@model List<Mobiplus.Models.ProjectModel.Item>
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-12 col-sm-3" style="padding: 1rem;">
+            <div class="tab_item_container" id="tab_item_container_@item.uuid">
+                <img class="tab_item w-100" uuid="@item.uuid" src="@item.path" />
+                <div class="tab_item_component text-center">
+                    <span class="title">@item.title</span><br />
+                    <span>_MobiPlus_</span>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>
+<script>
+    //$('#project-tab-item').on('click', '.tab_item',e => {
+    //    console.log(e.currentTarget);
+    //});
+</script>

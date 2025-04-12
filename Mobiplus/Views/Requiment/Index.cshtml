@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Tuyển nhân viên";
+    ViewData["BodyClass"] = "mobiplus-requiment";
+    ViewData["TitleName"] = "Chiêu mộ nhân tài";
+    ViewData["TitleParent"] = "Home";
+    ViewData["TitleLink"] = "Tuyển dụng";
+   
+}
+
+<div class="container">
+    @await Html.PartialAsync("/Views/Shared/Title.cshtml")
+</div>
+
+<div id="page-2">
+    <div class="container mobiplus__requiment">
+        <div id="requimen_zzz"></div>
+     @*   //xem them*@
+        <div class="d-flex mt-5 mb-5">
+            <button class="requiment-load-more-btn btn btn-primary ver_2 mx-auto" num="9">Xem thêm</button>
+        </div>
+    </div>
+</div>
+

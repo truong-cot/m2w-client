@@ -1,0 +1,47 @@
+﻿@model List<Mobiplus.Models.RequimentModel.Item>
+
+<div class="row blog_row pt-5">
+    @foreach (var item in Model)
+    {
+        <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="card mb-4 box-shadow blog__tab_shadow requiment_detail btn__xemthem" style="cursor: pointer;" id="tab_item_container_@item.uuid" data-id="@item.uuid">
+                <div class="row row__poxi mx-auto" style="position: relative">
+                    <img class="col-12 colcard-img-top tab_item" uuid="@item.uuid" src="@item.img" />
+                    
+                    <div class="col-12 mx-auto text-center bg">
+                        <div class="gg mx-auto">
+                            Hạn nộp hồ sơ: @item.time
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-6 pr-0">
+                            <i class="ri-time-line" style="vertical-align: -0.19em; font-size: 19px;"></i>
+                            <span class="font__14"> @item.time</span>
+                        </div>
+                        <div class="col-lg-7 col-md-6 col-6 border_leftshadow">
+                            <i class="ri-user-add-line" style="vertical-align: -0.19em; font-size: 19px;"></i>
+                            <span class="font__14">@item.number người</span>
+                        </div>
+                    </div>
+                    <h5 class="mt-2">@item.title</h5>
+                    <p class="card-text text-blog">@item.content</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="text-more">
+                            <h7>Xem thêm <span class="blog-them"></span></h7>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+<script>
+    $('.btn__xemthem').on('click', function (e) {
+        var uuid = $(this).attr('data-id');
+        console.log(uuid);
+        location.href = `/Requiment/Detail/${uuid}`;
+    })
+</script>

@@ -1,0 +1,489 @@
+﻿@model RequimentModel.Item
+@{
+    ViewData["Title"] = "Chi tiết tuyển nhân viên";
+    ViewData["BodyClass"] = "mobiplus-requiment";
+    ViewData["TitleName"] = "Chiêu mộ nhân tài";
+    ViewData["TitleParent"] = "Dự án tiêu biểu";
+    ViewData["TitleLink"] = @Model.title;
+    ViewData["TitleParentName"] = "Tuyển dụng";
+    
+}
+<div class="container">
+    @await Html.PartialAsync("/Views/Shared/Title.cshtml")
+</div>
+
+<div id="page-2" class="blog-datial">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lx-8 col-lg-8 col-md-6 col-sm-12 blog_row">
+                <div class="card mb-4 box-shadow-blog padding__pcmobi">
+                    <div class="card-body p-0">
+                        <img class=" card-img-blog" src="@Model.img" alt="Card image cap">
+                        <div class="mb-2 mt-4 blog-h4">@Model.title</div>
+                        <div class="mb-2" style="display:flex">
+                            <div class="pr-0 pr__5">
+                                <i class="ri-time-line icon__blog"></i>
+                                <span class="font__14">Admin</span>
+                            </div>
+                            <div class="pr-0 pl__5" style="border-left: 1px solid #DCE0FA;margin-left:20px">
+                                <i class="ri-time-line icon__blog" style="margin-left: 10px"></i>
+                                <span class="font__14">@Model.time</span>
+                            </div>
+                            <div class="pr-0 pl__5" style="border-left: 1px solid #DCE0FA;margin-left: 20px">
+                                <i class="ri-user-add-line icon__blog" style="margin-left: 10px"></i>
+                                <span class="font__14">@Model.number Người</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            @Model.content
+
+                        </p>
+                        @if (Model.uuid == "1")
+                        {
+                            <div class="h__5">
+                                Mô tả công việc
+                            </div>
+                            <ul class="pl-3">
+                                <li>
+                                    <p class="m-0">Tham gia phân tích, thiết kế luồng phát triển của ứng dụng di động dựa vào yêu cầu của khách hàng.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Đánh giá, phân tích, nâng cấp và tối ưu mã nguồn trong quá trình phát triển.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Nghiên cứu các công nghệ mới để áp dụng trong các dự án hiện tại và tương lai.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Tham gia đưa ra những ý tưởng, giải pháp mới cải thiện công việc.</p>
+                                </li>
+                              
+                            </ul>
+                            <div class="h__5">
+                                Yêu cầu công việc
+                            </div>
+                            <ul class="pl-3">
+                                <li>
+                                    <p class="m-0"> Có kinh nghiệm từ 6 tháng trở lên sử dụng các thư viện React-native.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Có kiến thức cơ bản về Redux, React hook, navigation.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">
+                                        Có tư duy cơ bản về hệ thống và các pattern.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Nắm vững các kiến thức về Git Có kinh nghiệm sử dụng API RESTful.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Trải nghiệm với các thư viện và API của bên thứ ba.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Có kiến thức tốt về lập trình hướng đối tượng.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Kỹ năng phân tích giải quyết vấn đề tốt.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Có hiểu biết Native Languages cho Android/iOS.</p>
+                                </li>
+                                <li>
+                                    <p class="m-0">Có sản phẩm được phát hành trên CH Play/ App Store là 1 lợi thế.</p>
+                                </li>
+                            
+                            </ul>
+
+                        }else if (Model.uuid == "2")
+                        {
+                        <div class="h__5">
+                            Mô tả công việc
+                        </div>
+                        <ul class="pl-3">
+                            <li>
+                                <p class="m-0">Nghiên cứu, lên ý tưởng, sáng tạo, layout, và trực tiếp thiết kế giao diện UI/UX phù hợp với người dùng cho những sản phẩm của công ty.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Thiết kế giao diện cho Website/App đảm bảo tính đồng nhất, thân thiện với người dùng và dễ sử dụng.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Đề xuất các phương án UX cho Website/App để cải thiện trải nghiệm người dùng.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Phân tích và nghiên cứu đối thủ, thị trường việc làm để có hành động phù hợp về mặt Website/App.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Phối hợp chặt chẽ với các bộ phận liên quan (Customer, Project Development, Tester,..) để xây dựng bản thiết kế tối ưu xuyên suốt dự án.</p>
+                            </li>
+                        </ul>
+                        <div class="h__5">
+                            Yêu cầu công việc
+                        </div>
+                        <ul class="pl-3">
+                            <li>
+                                <p class="m-0"> Có kinh nghiệm ít nhất 6 tháng kinh nghiệm trong lĩnh vực UI/UX Design, thiết kế Web, Mobile.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Thành thạo các phần mềm thiết kế: Figma, Illustrator, Adobe XD… và các công cụ thiết kế.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">
+                                    Có hiểu biết về Concept, Layout, Typography, Color.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-0">Có kiến thức tốt về UI/UX.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Cẩn thận, tỉ mỉ trong công việc.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Chủ động, có tinh thần trách nhiệm cao trong công việc.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Luôn chủ động học hỏi kiến, cập nhật kiến thức, xu hướng thiết kế mới phục vụ công việc.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Có khả năng làm việc độc lập hoặc theo nhóm, chịu được áp lực cao trong công việc.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Có khả năng làm việc độc lập hoặc theo nhóm, chịu được áp lực cao trong công việc.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Hồ sơ bao gồm sản phẩm hay dự án thiết kế đamg làm (Gửi kèm Portfolio/ link Portfolio khi ứng tuyển).</p>
+                            </li>
+                        </ul>
+
+                        } else if (Model.uuid == "3")
+                        {
+                        <div class="h__5">
+                            Mô tả công việc
+                        </div>
+                        <ul class="pl-3">
+                            <li>
+                                <p class="m-0">Lập plan test, viết  test case, thực hiện test, checklist, viết bug, report bug.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Nắm bắt liên tục được chất lượng dự án, tạo các report đánh giá chất lượng.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Tham gia review các tài liệu thiết kế giao diện, thiết kế kỹ thuật để nắm bắt tốt nhất các chức năng của hệ thống, phát hiện sớm các vấn đề ngay từ giai đoạn thiết kế, phát triển.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Tham gia vào tất cả các khâu trong quá trình phát triển phần mềm, bao gồm: tìm hiểu yêu cầu, phân tích, thiết kế…</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Thực hiện các công việc khác liên quan theo phân công của cấp trên.</p>
+                            </li>
+                        </ul>
+                        <div class="h__5">
+                            Yêu cầu công việc
+                        </div>
+                        <ul class="pl-3">
+                            <li>
+                                <p class="m-0">Tốt nghiệp các trường đại học/cao đẳng/trung tâm đào tạo về CNTT.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Biết hoặc có kinh nghiệm  làm Test Plan, Test Case, Test Report.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">
+                                    Phân tích và đọc hiểu tốt các tài liệu phát triển dự án  và các tài liệu thiết kế như API design, DB design, flowchart …
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-0">Có kinh nghiệm test API hoặc test Database.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Có kiến thức tốt về testing và quy trình phát triển web/app.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Kỹ năng giao tiếp tốt, có khả năng làm việc theo nhóm.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Có trách nhiệm cao trong công việc, thái độ cầu tiến và ham học hỏi.</p>
+                            </li>
+                        </ul>
+                        }
+                        else if (Model.uuid == "4")
+                        {
+                        <div class="h__5">
+                            Mô tả công việc
+                        </div>
+                        <ul class="pl-3">
+                            <li>
+                                <p class="m-0"> Lập plan test, viết  test case, thực hiện test, checklist, viết bug, report bug.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Nắm bắt liên tục được chất lượng dự án, tạo các report đánh giá chất lượng.</p>
+                            </li>
+
+                            <li>
+                                <p class="m-0">Tham gia review các tài liệu thiết kế giao diện, thiết kế kỹ thuật để nắm bắt tốt nhất các chức năng của hệ thống, phát hiện sớm các vấn đề ngay từ giai đoạn thiết kế, phát triển.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Tham gia vào tất cả các khâu trong quá trình phát triển phần mềm, bao gồm: tìm hiểu yêu cầu, phân tích, thiết kế…</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Quản lý và phân công việc cho cấp dưới trong team.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Theo dõi và quản lý các defect trong sản phẩm.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Xây dựng báo cáo kết quả Test cho các bên liên quan.</p>
+                            </li>
+                        </ul>
+                        <div class="h__5">
+                            Yêu cầu công việc
+                        </div>
+                        <ul class="pl-3">
+                            <li>
+                                <p class="m-0">Tối thiểu 2 năm kinh nghiệm làm việc ở vị trí Tester.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Có kinh nghiệm test web, test app.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">
+                                    Nắm vững quy trình test.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-0">Phân tích và đọc hiểu tốt các tài liệu phát triển dự án  và các tài liệu thiết kế như API design, DB design, flowchart …</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Biết sử dụng tool quản lý bug như Jira.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Khả năng đọc – hiểu và phân tích yêu cầu dự án.</p>
+                            </li>
+                            <li>
+                                <p class="m-0"> Tinh thần trách nhiệm cao, tỉ mỉ, cẩn thận.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Khả năng làm việc độc lập, chủ động, học nhanh.</p>
+                            </li>
+                            <li>
+                                <p class="m-0"> Có trách nhiệm cao trong công việc, thái độ cầu tiến và ham học hỏi.</p>
+                            </li>
+                        </ul>
+                        }
+                        <div class="h__5">
+                            Chế độ phúc lợi
+                        </div>
+                        <ul class="pl-3">
+                            <li>
+                                <p class="m-0">Môi trường làm việc  chuyên nghiệp trẻ trung và năng động.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Thu nhập cạnh tranh (Lương cứng + Thưởng dự án,  cuối năm) xét tăng lương hàng năm.</p>
+                            </li>
+
+                            <li>
+                                <p class="m-0">Chế độ thưởng Lễ Tết. Chế độ bảo hiểm xã hội và y tế, du lịch, nghỉ mát, teambuilding… hấp dẫn.</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Các chương trình đào tạo kĩ năng chuyên môn, cơ hội phát triển và thăng tiến rộng mở!</p>
+                            </li>
+                        </ul>
+                        <div class="h__5">
+                            Liên hệ
+                        </div>
+                        <p class="m-0"> Mọi thông tin chi tiết xin liên hệ:</p>
+                        <ul class="pl-3 m-0" s>
+                            <li>
+                                <p class="m-0"> SĐT: 0979648886 (Anh Tuân)</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Email: mobiplusm2w@gmail.com</p>
+                            </li>
+                            <li>
+                                <p class="m-0">Skype : thanhtuan_hy</p>
+                            </li>
+
+                        </ul>
+                        <p>
+                            Hạn nộp  hồ sơ @Model.time
+                        </p>
+
+                    </div>
+                    <div class="row justify-content-between mb-3 jui__detail">
+                        <div class="col-lg-7 col-md-6 col-sm-12 p-0 mb-2">
+                            <span class="pt-4 pr-1">Thẻ tag:</span>
+                            <span class="pt-4 px-1">UI-UX</span>
+                            <span class="pt-4 px-1">Tester</span>
+                            <span class="pt-4 px-1">Product Manager</span>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 p-0 pc__textline">
+                            <span class=" pt-4 pr-1">Chia sẻ:</span>
+                            <span class="pt-3 pl-2">
+                                <a class="btn btn-gray btn__footer" href="#!" role="button">
+                                    <i class="fab fa-facebook-f icon__fb"></i>
+                                </a>
+                                <a class="btn btn-gray btn__footer ml-1" href="#!" role="button">
+                                    <i class="fab fa-skype fa-lg icon__sky"></i>
+                                </a>
+                                <a class="btn btn-gray btn__footer ml-1" href="#!" role="button">
+                                    <i class="fab fa-telegram fa-lg icon__tele"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 box-shadow-blog">
+                    <div class="card-body">
+                        <div class="row p-4">
+                            <div class="col-lg-6 col-md-12 border__rightpc pl-0">
+                                <a class="text-left mt-2" href="/Requiment/Detail/2">
+                                    <i class="fas fa-arrow-left" style="color: #7D82A1;"></i><span class="text__16 ml-3">Trước</span>
+                                </a>
+                                <div class="h__5 text-left"> Test Fresher</div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 pr-0">
+                                <div class="text-right">
+                                    <a class="mt-2" href="/Requiment/Detail/3">
+                                        <span class="text__16 mr-3">Sau</span><i class="fas fa-arrow-right" style="color: #7D82A1;"></i>
+                                    </a>
+                                </div>
+                                <div class="h__5 text-right">Test Leader</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lx-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="jumbotron p__detail mb-4">
+                    <button type="button" class="btn btn-primary btn-lg btn-block btn-requiment" data-toggle="modal" data-target="#tuyendung">Nộp CV ứng tuyển</button>
+                    @await Html.PartialAsync("/Views/Requiment/InsertRecruitment.cshtml")
+                </div>
+                <div class="jumbotron p__detail mb-4">
+                    <div class="progress-group progress-datail">
+                        <div class="detail-text-requiment">
+                            <span>Mức lương</span>
+                            <span class="text-requiment">Theo thỏa thuận</span>
+                        </div>
+                        <div class="detail-text-requiment mt-3">
+                            <span>Thời gian làm việc</span>
+                            <span class="text-requiment">Toàn thời gian</span>
+                        </div>
+                        <div class="detail-text-requiment mt-3">
+                            <span>Địa điểm làm việc</span>
+                            <span class="text-requiment">Hà Nội</span>
+                        </div>
+                        <div class="detail-text-requiment mt-3">
+                            <span>Hạn nộp hồ sơ</span>
+                            <span class="text-requiment">@Model.time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="jumbotron p__detail mb-4">
+                    <div class="progress-group mb__18 progress-datail">
+                        Bài viết gần đây
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-primary" style="width: 20%"></div>
+                        </div>
+                    </div>
+                    
+                    <a class="card mt__6 bg-white box__shadows" href="/Requiment/Detail/1">
+                        <div class="card-body p___2">
+                            <div class="row">
+                                <div class=" col-4 pr-0">
+                                    <img class="" src="/image/Requiment/Group 5557.png" style="object-fit: cover; height: 64px; width: 87px !important; border-radius: 8px;">
+                                </div>
+                                <div class="col-8 pl-0">
+                                    <div class="cl__h4">Mobile App</div>
+                                    <div class="row row__styles">
+                                        <div class="col-12 pr-0 my-1">
+                                            <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                            <span>1 người</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                            <span> 01/02/2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card mt__6 bg-white box__shadows"  href="/Requiment/Detail/3">
+                        <div class="card-body p___2">
+                            <div class="row">
+                                <div class=" col-4 pr-0">
+                                    <img class="" src="/image/Requiment/FrameDesigner1.png" style="object-fit: cover; height: 64px; width: 87px !important; border-radius: 8px;">
+                                </div>
+                                <div class="col-8 pl-0">
+                                    <div class="cl__h4"> Test Fresher</div>
+                                    <div class="row row__styles">
+                                        <div class="col-12 pr-0 my-1">
+                                            <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                            <span>2 người</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                            <span>30/09/2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card mt__6 bg-white box__shadows"  href="/Requiment/Detail/4">
+                        <div class="card-body p___2">
+                            <div class="row">
+                                <div class=" col-4 pr-0">
+                                    <img class="" src="/image/Requiment/112.png" style="object-fit: cover; height: 64px; width: 87px !important; border-radius: 8px;">
+                                </div>
+                                <div class="col-8 pl-0">
+                                    <div class="cl__h4"> Test Leader</div>
+                                    <div class="row row__styles">
+                                        <div class="col-12 pr-0 my-1">
+                                            <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                            <span>1 người</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                            <span>01/12/2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="jumbotron p__detail mb-4">
+                    <div class="progress-group progress-datail">
+                        Thẻ tag
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-primary" style="width: 20%"></div>
+                        </div>
+                        <div class=" p-2">
+                            <a type="button" class="btn border__tag" href="/Requiment/Detail/3">
+                                Product Manager
+                            </a>
+                            <a type="button" class="btn border__tag" href="/Requiment/Detail/2">
+                                UI -UX
+                            </a>
+                            <a type="button" class="btn border__tag" href="/Requiment/Detail/1">
+                                Tester
+                            </a>
+                            <a type="button" class="btn border__tag" href="/Requiment/Detail/2">
+                                Thực tập sinh
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("a.Requiment").addClass("active");
+    function myFunction() {
+        var element = document.getElementById("a.Requiment");
+        element.classList.add("active");
+    }
+</script>

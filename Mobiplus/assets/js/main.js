@@ -1,0 +1,9 @@
+require('./home');
+require('./blog');
+require('./AboutUs');
+require('./requiment');
+require('./title');
+require('./project');
+require('./contractUs');
+require('./scrollup');
+require('./search');

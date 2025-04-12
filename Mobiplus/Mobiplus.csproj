@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Font.Awesome" Version="5.15.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.16" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\anime-master\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <None Include="wwwroot\lib\anime-master\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <None Include="wwwroot\lib\RemixIcon-master\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <None Include="wwwroot\lib\RemixIcon-master\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <None Include="wwwroot\lib\RemixIcon-master\.github\ISSUE_TEMPLATE\icon-request.md" />
+    <None Include="wwwroot\lib\RemixIcon-master\.github\workflows\npm-publish.yml" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,552 @@
+﻿@model BlogModel.Item
+@{
+    ViewData["Title"] = "Chi tiết blog";
+    ViewData["BodyClass"] = "mobiplus-blog";
+    ViewData["TitleName"] = "Blog";
+    ViewData["TitleParent"] = "Dự án tiêu biểu";
+    ViewData["TitleLink"] = "Bạn nên bắt đầu học Thiết kế UI từ đâu?";
+    ViewData["TitleParentName"] = "Blog";
+}
+
+<div class="container">
+    @await Html.PartialAsync("/Views/Shared/Title.cshtml")
+</div>
+@if (Model.id == "4")
+{
+    <div id="detail_blog">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lx-8 col-lg-8 col-md-12 col-sm-12 blog_row">
+                    <div class="card mb-4 box-shadow-blog padding__pcmobi">
+                        <div class="card-body p-0">
+                            <img class=" card-img-blog" src="~/image/blog/blog3.png" alt="Card image cap">
+                            <div class="mb-2 mt-4 blog-h4">Bạn nên bắt đầu học Thiết kế UI từ đâu?</div>
+                            <div class="mb-2" style="display:flex">
+                                <div class="pr-0 pr__5">
+                                    <i class="ri-time-line icon__blog"></i>
+                                    <span class="font__14">Admin</span>
+                                </div>
+                                <div class="pr-0 pl__5" style="border-left: 1px solid #DCE0FA;margin-left:20px">
+                                    <i class="ri-time-line icon__blog" style="margin-left: 10px"></i>
+                                    <span class="font__14">Thứ 4, 02/06/2021</span>
+                                </div>
+                                <div class="pr-0 pl__5" style="border-left: 1px solid #DCE0FA;margin-left:20px">
+                                    <i class="ri-file-list-line icon__blog" style="margin-left: 10px"></i>
+                                    <span class="font__14">Giáo dục</span>
+                                </div>
+                            </div>
+                            <p>
+                                Ngành UI/UX Design là một trong những nhóm ngành thiết kế có rất nhiều cơ hội việc
+                                là và có mức thu nhập khá cao. Nếu bạn đang có đam mê về
+                                UI Design và đang muốn theo học ngành này, dưới đây là một số mẹo hữu ích giúp bạn bắt đầu.
+                            </p>
+                            <div class="h__5">
+                                Trước tiên, bạn cần biết UI Designer làm công việc gì?
+                            </div>
+                            <p>
+                                Hiểu một cách đơn giản nhất UI Designer chịu trách nhiệm về thiết kế giao diện của trang web hoặc ứng dụng.
+                            </p>
+                            <div class="h__5">
+                                Bạn có thực sự thích Thiết kế giao diện người dùng?
+                            </div>
+                            <p>
+                                Hiểu một cách đơn giản nhất UI Designer chịu trách nhiệm về thiết kế giao diện của trang web hoặc ứng dụng.
+                            </p>
+                            <img class="mb-3 card-img-blog" src="~/image/blog/blog2.png" alt="Card image cap">
+                            <p>
+                                Nếu bạn muốn trở thành UI Design, giả định là bạn thích thiết kế giao diện và bạn cũng thích
+                                quan sát các thiết kế giao diện trên các ứng dụng hoặc các trang web.
+                            </p>
+                            <p>
+                                Nhưng nếu bạn không thích làm Thiết kế giao diện người dùng, thì hãy hỏi lại động lực của bạn khi muốn học UI Design là gì?
+                            </p>
+                            <div class="h__5">
+                                Bắt đầu bằng cách tạo Thiết kế giao diện người dùng
+                            </div>
+                            <p>
+                                Để bắt đầu học Thiết kế giao diện người dùng, bạn không cần phải học các nguyên tắc trong Thiết kế giao diện người dùng hoặc quy luật của các sản phẩm kỹ thuật số tốt,
+                                bạn cũng không cần phải học các nguyên tắc cơ bản về Giao diện người
+                            </p>
+                            <p>
+                                Bạn chỉ cần bắt đầu từ việc thiết kế 1 UI Design. Hãy xem các hướng dẫn đơn giản về thiết kế
+                                giao diện người dùng, nếu bạn thực sự muốn học thiết kế giao diện người dùng
+                            </p>
+                            <p>
+                                Theo tôi, mấu chốt của việc học UI Design là tập trung vào một thứ, thành thạo 1 thứ đó, sau đó mới phát triển sang những thứ khác.
+                            </p>
+                            <div class="h__5">Sao chép và thử nghiệm</div>
+                            <img class="mb-3 card-img-blog mt-3" src="~/image/blog/blog8.png" alt="Card image cap">
+                            <p>
+                                Một trong những cách hiệu quả để học Thiết kế giao diện người dùng là sao chép một thiết kế giao diện người dùng. Ví dụ: bạn thích trang web nào đó, hãy chụp màn hình trang web đó, đặt nó vào các phần mềm UI và cố gắng nhân bản nó.
+                            </p>
+                            <p>
+                                Bạn càng sao chép nó thường xuyên, bạn càng hiểu nhiều hơn về kích thước của các phần tử (Element) trong thiết kế giao diện người dùng.
+                            </p>
+                            <p>
+                                Bạn càng lặp lại thường xuyên, bạn sẽ càng biết thế nào là hình dạng của một nút bấm đẹp và cân đối.
+                            </p>
+                            <p>
+                                Bạn càng lặp lại thường xuyên, bạn sẽ càng hiểu nhiều hơn về khoảng cách hoặc độ dài văn bản trong một đoạn văn.
+                            </p>
+                            <p>
+                                Bạn càng thường xuyên sao chép, bạn sẽ càng hiểu cách kết hợp các chữ cái viết hoa và viết thường để tạo ra một hệ thống phân cấp thị giác.
+                            </p>
+                            <div class="h__5">Tập sao chép cho đến khi bạn muốn tạo thiết kế giao diện của riêng mình</div>
+                            <p>
+                                Sau khi thực hiện 10 đến 15 lần sao chép, bạn phải tò mò và muốn thử thiết kế giao diện của riêng mình. Xin chúc mừng nếu cảm giác đó đã xuất hiện. Bạn đã có sự tiến bộ.
+                            </p>
+                            <div class="h__5">
+                                Tham khảo từ nhiều người khác
+                            </div>
+                            <img class="mb-3 card-img-blog mt-3" src="~/image/blog/blog5.png" alt="Card image cap">
+                            <p> Thường thấy một thiết kế tốt, bạn sẽ biết một tiêu chuẩn thiết kế tốt trông như thế nào. Ngoài ra nó còn cho bạn rất nhiều bài học từ đó. Bạn có thể tham khảo các thiết kế UI tốt của các nhà thiết kế khác từ seri</p>
+                            <div class="h__5">Khi nào là thời điểm thích hợp để học một thứ gì đó khác? </div>
+                            <p> Khi bạn muốn hoặc khi bạn cần. Ví dụ khi bạn cần là khi bạn đang làm một dự án, thì trong dự án đó bạn phải tạo luồng tính năng mua hàng chẳng hạn, lúc đó bạn phải tìm hiểu về cách tạo luồng người dùng.</p>
+                            <div class="h__5">
+                                Quá trình và trình tự học tập của mỗi người là khác nhau
+                            </div>
+                            <img class="mb-3 card-img-blog mt-3" src="~/image/blog/blog9.png" alt="Card image cap">
+                            <p>
+                                Đừng lo lắng về quá trình học của bạn có đúng hay không. Miễn là bạn có thể tạo Thiết kế giao diện người dùng, thì bạn đã có một nền tảng vững chắc để trở thành Nhà thiết kế giao diện người dùng.
+                            </p>
+                            <p>
+                                Bạn chỉ cần quyết định cách bạn muốn phát triển. Bạn có muốn tập trung vào việc rèn giũa kỹ năng thiết kế hình ảnh của mình, hay tập trung vào việc rèn giũa khả năng làm sản phẩm của bạn.
+                                Quá trình học tập của bạn phụ thuộc vào sự lựa chọn mà bạn muốn tập trung vào.
+                            </p>
+                        </div>
+                        <div class="row justify-content-between mb-3 jui__detail">
+                            <div class="col-lg-7 col-md-6 col-sm-12 p-0 mb-2">
+                                <span class="pt-4 pr-1">Thẻ tag:</span>
+                                <span class="pt-4 px-1">UI-UX</span>
+                                <span class="pt-4 px-1">Tester</span>
+                                <span class="pt-4 px-1">Product Manager</span>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 p-0 pc__textline">
+                                <span class=" pt-4 pr-1">Chia sẻ:</span>
+                                <span class="pt-3 pl-2">
+                                    <a class="btn btn-gray btn__footer" href="#!" role="button">
+                                        <i class="fab fa-facebook-f icon__fb"></i>
+                                    </a>
+                                    <a class="btn btn-gray btn__footer ml-1" href="#!" role="button">
+                                        <i class="fab fa-skype fa-lg icon__sky"></i>
+                                    </a>
+                                    <a class="btn btn-gray btn__footer ml-1" href="#!" role="button">
+                                        <i class="fab fa-telegram fa-lg icon__tele"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow-blog">
+                        <div class="card-body">
+                            <div class="row p-4">
+                                <div class="col-lg-6 col-md-12 border__rightpc pl-0">
+                                    <div class="text-left mt-2">
+                                        <i class="fas fa-arrow-left" style="color: #7D82A1;"></i><span class="text__16 ml-3">Trước</span>
+                                    </div>
+                                    <div class="h__5 text-left font-weight-bold"> User Research – Hiểu rõ hơn về phân tích người dùng trong thiết kế UI/UX</div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="text-right mt-2">
+                                        <span class="text__16 mr-3">Sau</span><i class="fas fa-arrow-right" style="color: #7D82A1;"></i>
+                                    </div>
+                                    <div class="h__5 text-right font-weight-bold"> Directional Cues: Các tín hiệu định hướng trong thiết kế giao diện người dùng</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lx-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="jumbotron p__detail mb-4">
+                        <div class="progress-group mb-4 progress-datail">
+                            Tìm kiếm
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <div class="form-outline datail-input datail-reb">
+                            <input id="search-focus" type="search" class="form-control" placeholder="Nhập từ khóa tìm kiếm..." />
+                            <button type="button" class="btn btn-primary btn-datail">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="jumbotron p__detail mb-4">
+                        <div class="progress-group progress-datail">
+                            Danh mục
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                            </div>
+                            <div class="detail-text-1 mt-4">
+                                <span>Hoạt động văn hóa</span>
+                                <span class="detail-text">(06)</span>
+                            </div>
+                            <div class="detail-text-1 mt-4">
+                                <span>Giáo dục</span>
+                                <span class="detail-text">(02)</span>
+                            </div>
+                            <div class="detail-text-1 mt-4">
+                                <span>Chính sách</span>
+                                <span class="detail-text">(08)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron p__detail mb-4">
+                        <div class="progress-group mb__18 progress-datail">
+                            Bài viết gần đây
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <a class="card mt__6 bg-white box__shadows" asp-controller="Blog" asp-action="Detail">
+                            <div class="card-body p___2">
+                                <div class="row">
+                                    <div class=" col-4 pr-0">
+                                        <img class="w__100" src="/image/blog/blog-deital-1.png">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        <div class="cl__h4"> Senior Android Engineer</div>
+                                        <div class="row row__styles">
+                                            <div class="col-12 pr-0 my-1">
+                                                <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                                <span>2 người</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                                <span>Thứ 4, 02/06/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card mt__6 bg-white box__shadows" asp-controller="Blog" asp-action="Detail">
+                            <div class="card-body p___2">
+                                <div class="row">
+                                    <div class=" col-4 pr-0">
+                                        <img class="w__100" src="/image/blog/blog-deital-1.png">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        <div class="cl__h4"> Senior Android Engineer</div>
+                                        <div class="row row__styles">
+                                            <div class="col-12 pr-0 my-1">
+                                                <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                                <span>2 người</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                                <span>Thứ 4, 02/06/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card mt__6 bg-white box__shadows" asp-controller="Blog" asp-action="Detail">
+                            <div class="card-body p___2">
+                                <div class="row">
+                                    <div class=" col-4 pr-0">
+                                        <img class="w__100" src="/image/blog/blog-deital-1.png">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        <div class="cl__h4"> Senior Android Engineer</div>
+                                        <div class="row row__styles">
+                                            <div class="col-12 pr-0 my-1">
+                                                <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                                <span>2 người</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                                <span>Thứ 4, 02/06/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card mt__6 bg-white box__shadows" asp-controller="Blog" asp-action="Detail">
+                            <div class="card-body p___2">
+                                <div class="row">
+                                    <div class=" col-4 pr-0">
+                                        <img class="w__100" src="/image/blog/blog-deital-1.png">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        <div class="cl__h4"> Senior Android Engineer</div>
+                                        <div class="row row__styles">
+                                            <div class="col-12 pr-0 my-1">
+                                                <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                                <span class="ml-2">2 người</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                                <span>Thứ 4, 02/06/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="jumbotron p__detail mb-4">
+                        <div class="progress-group progress-datail">
+                            Thẻ tag
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                            </div>
+                            <div class=" p-2">
+                                <button type="button" class="btn border__tag">
+                                    Product Manager
+                                </button>
+                                <button type="button" class="btn border__tag">
+                                    UI -UX
+                                </button>
+                                <button type="button" class="btn border__tag">
+                                    Tester
+                                </button>
+                                <button type="button" class="btn border__tag">
+                                    Thực tập sinh
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div id="detail_blog">
+        <div class="container">
+            <div class="row mt-5">
+
+                <div class="col-lx-8 col-lg-8 col-md-12 col-sm-12 blog_row">
+                    <div class="card mb-4 box-shadow-blog padding__pcmobi">
+                        <div class="card-body p-0">
+                            <div class="mb-2 mt-4 blog-h4">@Model.content</div>
+                            <div class="mb-2" style="display:flex">
+                                <div class="pr-0 pr__5">
+                                    <i class="ri-time-line icon__blog"></i>
+                                    <span class="font__14">Admin</span>
+                                </div>
+                                <div class="pr-0 pl__5" style="border-left: 1px solid #DCE0FA;margin-left:20px">
+                                    <i class="ri-time-line icon__blog" style="margin-left: 10px"></i>
+                                    <span class="font__14">@Model.time</span>
+                                </div>
+                                <div class="pr-0 pl__5" style="border-left: 1px solid #DCE0FA;margin-left:20px">
+                                    <i class="ri-file-list-line icon__blog" style="margin-left: 10px"></i>
+                                    <span class="font__14">@Model.theme</span>
+                                </div>
+                            </div>
+
+                            @foreach (var i in Model.lsting)
+                            {
+                                <img class="mb-3 card-img-blog" src="@i" alt="Card image cap" />
+                            }
+
+
+
+                        </div>
+                        <div class="row justify-content-between mb-3 jui__detail">
+                            <div class="col-lg-7 col-md-6 col-sm-12 p-0 mb-2">
+                                <span class="pt-4 pr-1">Thẻ tag:</span>
+                                <span class="pt-4 px-1">UI-UX</span>
+                                <span class="pt-4 px-1">Tester</span>
+                                <span class="pt-4 px-1">Product Manager</span>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 p-0 pc__textline">
+                                <span class=" pt-4 pr-1">Chia sẻ:</span>
+                                <span class="pt-3 pl-2">
+                                    <a class="btn btn-gray btn__footer" href="#!" role="button">
+                                        <i class="fab fa-facebook-f icon__fb"></i>
+                                    </a>
+                                    <a class="btn btn-gray btn__footer ml-1" href="#!" role="button">
+                                        <i class="fab fa-skype fa-lg icon__sky"></i>
+                                    </a>
+                                    <a class="btn btn-gray btn__footer ml-1" href="#!" role="button">
+                                        <i class="fab fa-telegram fa-lg icon__tele"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow-blog">
+                        <div class="card-body">
+                            <div class="row p-4">
+                                <div class="col-lg-6 col-md-12 border__rightpc pl-0">
+                                    <div class="text-left mt-2">
+                                        <i class="fas fa-arrow-left" style="color: #7D82A1;"></i><span class="text__16 ml-3">Trước</span>
+                                    </div>
+                                    <div class="h__5 text-left font-weight-bold"> User Research – Hiểu rõ hơn về phân tích người dùng trong thiết kế UI/UX</div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="text-right mt-2">
+                                        <span class="text__16 mr-3">Sau</span><i class="fas fa-arrow-right" style="color: #7D82A1;"></i>
+                                    </div>
+                                    <div class="h__5 text-right font-weight-bold"> Directional Cues: Các tín hiệu định hướng trong thiết kế giao diện người dùng</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lx-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="jumbotron p__detail mb-4">
+                        <div class="progress-group mb-4 progress-datail">
+                            Tìm kiếm
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <div class="form-outline datail-input datail-reb">
+                            <input id="search-focus" type="search" class="form-control" placeholder="Nhập từ khóa tìm kiếm..." />
+                            <button type="button" class="btn btn-primary btn-datail">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="jumbotron p__detail mb-4">
+                        <div class="progress-group progress-datail">
+                            Danh mục
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                            </div>
+                            <div class="detail-text-1 mt-4">
+                                <span>Hoạt động văn hóa</span>
+                                <span class="detail-text">(06)</span>
+                            </div>
+                            <div class="detail-text-1 mt-4">
+                                <span>Giáo dục</span>
+                                <span class="detail-text">(02)</span>
+                            </div>
+                            <div class="detail-text-1 mt-4">
+                                <span>Chính sách</span>
+                                <span class="detail-text">(08)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron p__detail mb-4">
+                        <div class="progress-group mb__18 progress-datail">
+                            Bài viết gần đây
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <a class="card mt__6 bg-white box__shadows" asp-controller="Blog" asp-action="Detail">
+                            <div class="card-body p___2">
+                                <div class="row">
+                                    <div class=" col-4 pr-0">
+                                        <img class="w__100" src="/image/blog/blog-deital-1.png">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        <div class="cl__h4"> Senior Android Engineer</div>
+                                        <div class="row row__styles">
+                                            <div class="col-12 pr-0 my-1">
+                                                <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                                <span>2 người</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                                <span>Thứ 4, 02/06/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card mt__6 bg-white box__shadows" asp-controller="Blog" asp-action="Detail">
+                            <div class="card-body p___2">
+                                <div class="row">
+                                    <div class=" col-4 pr-0">
+                                        <img class="w__100" src="/image/blog/blog-deital-1.png">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        <div class="cl__h4"> Senior Android Engineer</div>
+                                        <div class="row row__styles">
+                                            <div class="col-12 pr-0 my-1">
+                                                <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                                <span>2 người</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                                <span>Thứ 4, 02/06/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card mt__6 bg-white box__shadows" asp-controller="Blog" asp-action="Detail">
+                            <div class="card-body p___2">
+                                <div class="row">
+                                    <div class=" col-4 pr-0">
+                                        <img class="w__100" src="/image/blog/blog-deital-1.png">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        <div class="cl__h4"> Senior Android Engineer</div>
+                                        <div class="row row__styles">
+                                            <div class="col-12 pr-0 my-1">
+                                                <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                                <span>2 người</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                                <span>Thứ 4, 02/06/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card mt__6 bg-white box__shadows" asp-controller="Blog" asp-action="Detail">
+                            <div class="card-body p___2">
+                                <div class="row">
+                                    <div class=" col-4 pr-0">
+                                        <img class="w__100" src="/image/blog/blog-deital-1.png">
+                                    </div>
+                                    <div class="col-8 pl-0">
+                                        <div class="cl__h4"> Senior Android Engineer</div>
+                                        <div class="row row__styles">
+                                            <div class="col-12 pr-0 my-1">
+                                                <i class="fas fa-user-plus" style="color: #00C9FB;"></i>
+                                                <span class="ml-2">2 người</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <i class="far fa-clock" style="color: #00C9FB;"></i>
+                                                <span>Thứ 4, 02/06/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="jumbotron p__detail mb-4">
+                        <div class="progress-group progress-datail">
+                            Thẻ tag
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                            </div>
+                            <div class=" p-2">
+                                <button type="button" class="btn border__tag">
+                                    Product Manager
+                                </button>
+                                <button type="button" class="btn border__tag">
+                                    UI -UX
+                                </button>
+                                <button type="button" class="btn border__tag">
+                                    Tester
+                                </button>
+                                <button type="button" class="btn border__tag">
+                                    Thực tập sinh
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

@@ -1,0 +1,62 @@
+﻿@using Mobiplus.Models
+@{
+    ViewData["Title"] = "Dự án";
+    ViewData["TitleName"] = "Dự án tiêu biểu";
+    ViewData["TitleLink"] = "Dự án tiêu biểu";
+    ViewData["TitleParent"] = "Home";
+    ViewData["TitleParentName"] = "Trang chủ";
+}
+
+<div class="container">
+    @await Html.PartialAsync("/Views/Shared/Title.cshtml")
+</div>
+<div id="project">
+    <div class="container">
+        <h3 class="d-none d-block-phone text-center text_2">Dự án tiêu biểu</h3>
+        <h3 class="d-none d-block-phone hide-text-sm text-center text_3">Một số sản phẩm tiêu biểu</h3>
+        @*<div class="d-flex flex-nowrap w-100 project-tab">
+            <ul class="nav mx-auto row" id="project-tab-nav" role="tablist">
+                <li class="nav-item text-center item_all">
+                    <a class="nav-link text_1" data-toggle="tab" href="#project-all" role="tab" aria-controls="project-all" aria-selected="true">
+                        Tất cả
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link text_1 active" data-toggle="tab" href="#project-web" role="tab" aria-controls="project-web" aria-selected="false">
+                        Trang web
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link text_1" data-toggle="tab" href="#project-app" role="tab" aria-controls="project-app" aria-selected="false">
+                        Ứng dụng
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link text_1" data-toggle="tab" href="#project-system" role="tab" aria-controls="project-system" aria-selected="false">
+                        Hệ thống quản lý
+                    </a>
+                </li>
+            </ul>
+        </div>*@
+
+        <div class="tab-content" id="project-tab-item" current-key-tab="all">
+            <div class="tab-pane fade" id="project-all" role="tabpanel" aria-labelledby="project-all-tab">
+                @* @await Html.PartialAsync("/Views/Project/TabItem.cshtml", new ProjectModel.TabItem { keyTab = "all", num = 9 });*@
+            </div>
+            <div class="tab-pane fade show active" id="project-web" role="tabpanel" aria-labelledby="project-web-tab">
+                @*@await Html.PartialAsync("/Views/Project/TabItem.cshtml", new ProjectModel.TabItem { keyTab = "all", num = 9 });*@
+            </div>
+            <div class="tab-pane fade" id="project-app" role="tabpanel" aria-labelledby="project-app-tab">
+                @* @await Html.PartialAsync("/Views/Project/TabItem.cshtml", new ProjectModel.TabItem { keyTab = "all", num = 9 });*@
+            </div>
+            <div class="tab-pane fade" id="project-system" role="tabpanel" aria-labelledby="project-system-tab">
+                @*@await Html.PartialAsync("/Views/Project/TabItem.cshtml", new ProjectModel.TabItem { keyTab = "all", num = 9 });*@
+            </div>
+        </div>
+        <div class="d-flex my-5">
+            <button class="project-load-more-btn btn btn-primary ver_2 mx-auto" num="9">Xem thêm</button>
+        </div>
+    </div>
+</div>
+
+

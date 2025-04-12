@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewData["Title"] = "Liên hệ";
+    ViewData["TitleName"] = "Liên hệ với chúng tôi";
+    ViewData["TitleLink"] = "Liên hệ";
+    ViewData["TitleParent"] = "Home";
+    ViewData["TitleParentName"] = "Trang chủ";
+}
+
+<div class="container">
+    @await Html.PartialAsync("/Views/Shared/Title.cshtml")
+</div>
+<div class="contract_us">
+    <div class="row no-gutters">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-12 col-md-6 order-1 order-md-0">
+                    <p class="contract_us_text_1">Liên hệ với chúng tôi</p>
+                    <h2 class="contract_us_text_2">Kết nối với chúng tôi</h2>
+                    <p class="contract_us_text_4">Chúng tôi luôn hoan nghênh các ứng cử viên tiềm năng, những người muốn làm việc trong môi trường năng động và sáng tạo.</p>
+                    <div class="d-flex my-3">
+                        <img src="~/image/ContactUs/address.jpg" width="60" height="60" class="mr-4 my-auto" />
+                        <div>
+                            <p class="contract_us_text_3">Địa chỉ</p>
+                            <span class="contract_us_text_4">Tầng 6, tòa nhà 130, Nguyễn Đức Cảnh, P. Tương Mai, Q. Hoàng Mai, Tp. Hà Nội</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex my-3">
+                        <img src="~/image/ContactUs/phone.jpg" width="60" height="60" class="mr-4 my-auto" />
+                        <div>
+                            <p class="contract_us_text_3">Điện thoại</p>
+                            <span class="contract_us_text_4">0934051826</span>
+                        </div>
+                    </div>
+                    <div class="d-flex my-3">
+                        <img src="~/image/ContactUs/email.jpg" width="60" height="60" class="mr-4 my-auto" />
+                        <div>
+                            <p class="contract_us_text_3">Email</p>
+                            <span class="contract_us_text_4">contact@m2w.vn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-0 order-md-0">
+                    <div class="w-100 contact_us_img">
+                        <img class="cu_img_h_max" src="~/image/ContactUs/pic1/imgContainer.png" />
+
+                        <img class="cu_img_1" src="~/image/ContactUs/pic1/contactUs1.jpg" />
+                        <img class="cu_img_7" src="~/image/ContactUs/pic1/line1.svg" />
+                        <img class="cu_img_8" src="~/image/ContactUs/pic1/line2.svg" />
+                        <img class="cu_img_9" src="~/image/ContactUs/pic1/line3.svg" />
+                        <img class="cu_img_2" src="~/image/ContactUs/pic1/flower.svg" />
+                        <img class="cu_img_3" src="~/image/ContactUs/pic1/chatBoxHelp.svg" />
+                        <img class="cu_img_4" src="~/image/ContactUs/pic1/chatBoxHi.svg" />
+                        <img class="cu_img_5" src="~/image/ContactUs/pic1/chatBoxName.svg" />
+                        <img class="cu_img_6" src="~/image/ContactUs/pic1/oclock.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map1" class="container w-100">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1451964720345!2d105.84972241540197!3d20.986816094583613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad4274ed56ed%3A0xd18d933534794d4!2zMTMwIE5ndXnhu4VuIMSQ4bupYyBD4bqjbmgsIFTGsMahbmcgTWFpLCBIYWkgQsOgIFRyxrBuZywgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628499143743!5m2!1svi!2s" height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="below_map row no-gutters">
+        <div class="container mx-auto" style="z-index: 10;">
+            <div class="contact_us_box_1">
+                <p class="contract_us_text_1">Liên hệ với chúng tôi</p>
+                <h2 class="contract_us_text_2 ver_2">Gửi thông tin liên hệ</h2>
+                <p class="contract_us_text_4 ver_2">Bạn vui lòng điền đầy đủ các thông tin theo form bên dưới để chúng tôi tiếp nhận được đầy đủ thông tin của bạn hơn.</p>
+                <form class="contact_us_form">
+                    <div class="row">
+                        <div class="col-12 col-md-6 form-group mb-0">
+                            <input type="text" class="form-control ver_2" id="" aria-describedby=""
+                                   placeholder="Nhập họ và tên của bạn">
+                        </div>
+                        <div class="col-12 col-md-6 form-group mb-0">
+                            <input type="email" class="form-control ver_2" id=""
+                                   placeholder="Email liên hệ">
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-0">
+                        <input type="text" class="form-control ver_2" id=""
+                               placeholder="Nhập tiêu đề nội dung">
+                    </div>
+                    <div class="form-group mb-0">
+                        <textarea class="form-control ver_2" id="" rows="5" placeholder="Nội dung ghi chú..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary ver_2">Gửi yêu cầu của bạn</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,80 @@
+﻿
+
+
+<div class="title_container">
+
+    <img class="icon icon_1" src="~/image/Title/gear1.png" />
+    <img class="icon icon_2" src="~/image/Title/gear2.png" />
+    <img class="icon icon_3" src="~/image/Title/gear3.png" />
+
+    <img class="icon icon_4" src="~/image/Title/gear1.png" />
+    <img class="icon icon_5" src="~/image/Title/gear2.png" />
+    <img class="icon icon_6" src="~/image/Title/gear3.png" />
+    @*<script src="~/lib/anime-master/lib/anime.min.js"></script>*@
+
+
+    <div class="title_tree_container mt-auto icon icon_7">
+        <img class="" src="~/image/Title/titleTree.png" />
+        <img class="title_star" src="~/image/Title/smallStar.png" />
+    </div>
+    <div class="title_tree_container mt-auto icon icon_8">
+        <img class="" src="~/image/Title/titleTree.png" />
+        <img class="title_star title_star_2" src="~/image/Title/smallStar.png" />
+    </div>
+    @*<img src="~/image/Title/Header.png" class="w-100" />*@
+    <div class="row h-100 col-12 col-md-10 col-lg-10 mx-auto h-100 flex-nowrap">
+        @*<div class="title_tree_container mt-auto">
+                <img class="" src="~/image/Title/titleTree.png" />
+                <img class="title_star" src="~/image/Title/smallStar.png" />
+            </div>*@
+
+        <div class="mx-auto d-flex flex-column center_text_box">
+            <div class="text-center my-auto text_default">
+                <p class="title_1">@ViewData["TitleName"]</p>
+
+                <div class="d-inline-flex">
+                    <i class="ri-arrow-right-s-line title_2" style="width: 0px;overflow:hidden;"></i>
+                    <a href="/Home" class="title_2">Trang chủ</a>
+                </div>
+                @if (ViewData["TitleParent"] == null)
+                {
+                    @*<div class="d-inline-flex">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>*@
+                }
+                else
+                {
+                    if ((string)ViewData["TitleParent"] == "Home")
+                    {
+                        <div class="d-inline-flex">
+                            <i class="ri-arrow-right-s-line title_2"></i>
+                            <a asp-action="index" class="title_2 opacity_08">@ViewData["TitleLink"]</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="d-inline-flex">
+                            <i class="ri-arrow-right-s-line title_2"></i>
+                            <a asp-action="index" class="title_2 opacity_08">@ViewData["TitleParentName"]</a>
+                        </div>
+
+                        <div class="d-inline-flex">
+                            <i class="ri-arrow-right-s-line title_2"></i>
+                            <span class="title_2 opacity_08">@ViewData["TitleLink"]</span>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+        @*<img class="mt-auto" src="~/image/Title/titleTree.png" />*@
+    </div>
+
+</div>
+
+<script></script>
+
+
+
+
+
+

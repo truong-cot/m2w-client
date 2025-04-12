@@ -1,0 +1,37 @@
+﻿<!-- Modal -->
+<div class="modal fade" id="tuyendung" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">@Model.title
+                    <span class="san_tile"></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="td_vc">
+                    <div class="form-group">
+                        <label for="IDname">Họ và tên</label>
+                        <input type="text" class="form-control" id="IDname" placeholder="Nhập họ và tên của bạn...">
+                    </div>
+                    <div class="form-group">
+                        <label for="cv_b">CV của bạn</label>
+                        <div class="input-group" id="cv_b">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                <label class="custom-file-label" for="inputGroupFile01">Không có tệp nào được chọn</label>
+                            </div>
+                        </div>
+                        <small id="thog_bao" class="form-text text-muted"><i class="ri-error-warning-fill icon_vc"></i>Chúng tôi nhận tệp .doc .docx, .pdf lên đến 1MB</small>
+                    </div>
+                    <label for="Textarea1">Những kỹ năng nào giúp bạn trở thành ứng cử viên nặng ký</label>
+                    <textarea class="form-control" id="Textarea1" rows="4" placeholder="Nhập thông tin sẽ giúp bạn có khả năng ứng tuyển cao hơn..."></textarea>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-vc">Gửi CV của tôi</button>
+            </div>
+        </div>
+    </div>
+</div>

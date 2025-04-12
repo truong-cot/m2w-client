@@ -1,0 +1,150 @@
+﻿
+
+
+
+
+.title_container {
+    background: #0C5ADB;
+    position: relative;
+}
+
+.title_container .icon {
+    position: absolute;
+}
+
+.title_container .icon.icon_1 {
+    top: 64%;
+    left: 4%;
+}
+
+.title_container .icon.icon_2 {
+    top: 35%;
+    left: 2%;
+}
+
+.title_container .icon.icon_3 {
+    top: 15%;
+    left: 8%;
+}
+
+.title_container .icon.icon_4 {
+    top: 64%;
+    right: 4%;
+}
+
+.title_container .icon.icon_5 {
+    top: 35%;
+    right: 2%;
+}
+
+.title_container .icon.icon_6 {
+    top: 15%;
+    right: 8%;
+}
+
+.title_container .icon.icon_7 {
+    bottom: 0%;
+    left: 10%;
+}
+
+.title_container .icon.icon_8 {
+    bottom: 0%;
+    right: 10%;
+}
+
+.text_default {
+}
+
+.text_default.title_1,
+.text_default .title_1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: #FBFCFF;
+}
+
+.text_default.title_2,
+.text_default .title_2 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.text_default.title_2.opacity_08,
+.text_default .title_2.opacity_08 {
+    opacity: 0.8;
+}
+
+.text_center_v {
+    text-align: center;
+}
+
+.title_tree_container {
+    position: relative;
+}
+
+.title_tree_container .title_tree {
+}
+
+.title_tree_container .title_star {
+    position: absolute;
+    top: -5%;
+    left: 30%;
+}
+
+.center_text_box {
+    padding-top: 4.81rem;
+    padding-bottom: 4.81rem;
+}
+
+@media only screen and (max-width:739px) {
+    //phone
+    .center_text_box {
+        padding-top: 37px;
+        padding-bottom: 37px;
+    }
+
+    .title_container .icon {
+        display: none;
+    }
+
+    .text_default.title_1,
+    .text_default .title_1 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        color: #FBFCFF;
+    }
+
+    .text_default.title_2,
+    .text_default .title_2 {
+        font-size: 15px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+
+}
+
+/*@media only srceen and (min-width:740px) and (max-width:2013px) {*/
+@media only screen and (min-width:739px) and (max-width:2013px) {
+    //tablet
+
+}
+
+@media only screen and (min-width:2014px) {
+    //computer
+
+}
+
+
+
+
+
+
+
+
+
+
+

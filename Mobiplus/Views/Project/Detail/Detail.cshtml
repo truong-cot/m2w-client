@@ -1,0 +1,121 @@
+﻿
+
+@model Mobiplus.Objects.ProjectObject.Item
+
+@{
+    ViewData["Title"] = "Chi tiết dự án";
+    ViewData["TitleName"] = "Dự án tiêu biểu";
+    ViewData["TitleLink"] = Model.name;
+    ViewData["TitleParent"] = "Project";
+    ViewData["TitleParentName"] = "Dự án";
+}
+
+@await Html.PartialAsync("/Views/Shared/Title.cshtml")
+
+<div class="project_detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-9">
+                <div class="box_project_detail_1">
+                    @*<img src="~/image/Project/Project1.png"  />*@
+
+                    <img src="@Model.img.Replace("~","")" class="w-100 project_detail_image_box mb-5" />
+                    <h3 class="pd_text_name mb-3">@Model.name</h3>
+                    <p class="pd_text_description mb-3">@Model.description</p>
+
+                    @if (Model.uuid == "1" || Model.uuid == "6")
+                    {
+                        <p><strong>Hệ thống bao gồm:</strong></p>
+                        <ul>
+                            <li>Quản lý dự án</li>
+                            <li>Quản lý phiếu yêu cầu</li>
+                            <li>Quản lý công việc </li>
+                            <li>Quản lý nhân sự</li>
+                            <li>Quản lý khách hàng</li>
+                            <li>Quản lý kho, thiết bị ,vật tư</li>
+                            <li>Quản lý khu vực</li>
+                            <li>Báo cáo thống kê dự án, thiết bị, nhân sự, yêu cầu,...</li>
+                            <li>Hệ thống DMMS có sự liên kết giữa các module cố định với thiết bị hỗ trợ như điện thoại.</li>
+                        </ul>
+                    }
+                    else if (Model.uuid == "2")
+                    {
+                        <p><strong>Hệ thống bao gồm:</strong></p>
+                        <ul>
+                            <li>Quản lý dự án</li>
+                            <li>Quản lý phiếu yêu cầu</li>
+                            <li>Quản lý công việc </li>
+                            <li>Quản lý nhân sự</li>
+                            <li>Quản lý khách hàng</li>
+                            <li>Quản lý kho, thiết bị ,vật tư</li>
+                            <li>Quản lý khu vực</li>
+                            <li>Báo cáo thống kê dự án, thiết bị, nhân sự, yêu cầu,...</li>
+                            <li>Hệ thống DMMS có sự liên kết giữa các module cố định với thiết bị hỗ trợ như điện thoại.</li>
+                        </ul>
+                    }
+                    else if (Model.uuid == "3")
+                    {
+                        <p><strong>Hệ thống bao gồm:</strong></p>
+                        <ul>
+                            <li>Quản lý dự án</li>
+                            <li>Quản lý phiếu yêu cầu</li>
+                            <li>Quản lý công việc </li>
+                            <li>Quản lý nhân sự</li>
+                            <li>Quản lý khách hàng</li>
+                            <li>Quản lý kho, thiết bị ,vật tư</li>
+                            <li>Quản lý khu vực</li>
+                            <li>Báo cáo thống kê dự án, thiết bị, nhân sự, yêu cầu,...</li>
+                            <li>Hệ thống DMMS có sự liên kết giữa các module cố định với thiết bị hỗ trợ như điện thoại.</li>
+                        </ul>
+                    }
+                    else if (Model.uuid == "3")
+                    {
+                        <p><strong>Hệ thống bao gồm:</strong></p>
+                        <ul>
+                            <li>Quản lý dự án</li>
+                            <li>Quản lý phiếu yêu cầu</li>
+                            <li>Quản lý công việc </li>
+                            <li>Quản lý nhân sự</li>
+                            <li>Quản lý khách hàng</li>
+                            <li>Quản lý kho, thiết bị ,vật tư</li>
+                            <li>Quản lý khu vực</li>
+                            <li>Báo cáo thống kê dự án, thiết bị, nhân sự, yêu cầu,...</li>
+                            <li>Hệ thống DMMS có sự liên kết giữa các module cố định với thiết bị hỗ trợ như điện thoại.</li>
+                        </ul>
+                    }
+                    else if (Model.uuid == "6")
+                    {
+                        <p><strong>Hệ thống bao gồm:</strong></p>
+                        <ul>
+                            <li>Đăng bài </li>
+                            <li>Tạo câu lạc bộ</li>
+                            <li>Tìm kiếm câu lạc bộ</li>
+                            <li>Thách đấu,giao lưu </li>
+                            <li>Tìm kiếm thầy dậy,đăng ký học</li>
+                            <li>Livestream các trận đấu</li>
+                        </ul>
+                    }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3">
+                <div class="box_project_detail_1" style="padding: 2rem;">
+                    <h4 class="pd_text_info">Thông tin dự án</h4>
+                    <div class="lineb_title"><div></div></div>
+                    <p class="mb-1"><strong>Khách hàng</strong></p>
+                    <p>@Model.customer_name</p>
+                    <p class="mb-1"><strong>Danh mục</strong></p>
+                    <p>@Model.listmenu</p>
+                    <p class="mb-1"><strong>Thời gian</strong></p>
+                    <p class="mb-0">@Model.time</p>
+                </div>
+                <div class="box_project_detail_2" style="margin-top: 2rem;">
+                    <h4 class="pd_text_info">Mong muốn hợp tác</h4>
+                    <div class="lineb_title_2"><div></div></div>
+                    <p style="margin-bottom:24px;">Bạn đang tìm kiếm đối tác để phát triển dự án của mình. Hãy liên hệ với chúng tôi, chúng tôi sẵn sàng giúp bạn</p>
+                    <a class="btn btn-light ver_2" asp-controller="ContactUs" asp-action="index">Liên hệ với chúng tôi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

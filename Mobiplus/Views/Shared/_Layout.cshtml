@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/image/Subtract.png" />
+    <title>@ViewData["Title"] - Mobiplus</title>
+    <link href="~/lib/RemixIcon-master/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+    <link href="~/lib/OwlCarousel2/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/lib/OwlCarousel2/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/dist/style.css" rel="stylesheet" />
+</head>
+<body class="@ViewData["BodyClass"]">
+    <header class="header__top">
+        @await Html.PartialAsync("/Views/Shared/Search.cshtml")
+        <div class="mk-fullscreen-search-overlay" id="mk-search-overlay">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light nav__padding" style="width:100%">
+            <div class="container mx-auto menuMobi row">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" id="open__silde">
+                    <span class="ri-menu-2-line icon__slide"></span>
+                </button>
+                <div class="ml-2 logo">
+                    <a class="navbar-brand">
+                        <img class="width__img" src="~/image/Group 154.png" />
+                    </a>
+                </div>
+                <!-- Button trigger modal -->
+                <div class="bg-white order-lg-3 order-md-3 ml-auto" value="Inicie" id="search-button-listener">
+                    <div id="search-button"> <i class="ri-search-2-line icon__search"></i></div>
+                </div>
+                <div class="navbar-collapse collapse d-lg-inline-flex flex-lg-row-reverse">
+                    <ul class="navbar-nav flex-grow-1" style="justify-content: center">
+                        <li class="nav-item row d-lg-none" style="background:#0C50D2;padding: 21px 8px;">
+                            <img class="ml-3" src="~/image/Logo_Mobiplus.png" style="height:35px" />
+                            <button class="btn ml-auto text-white" data-toggle="collapse" data-target=".navbar-collapse" id="close__silde"><i class="fas fa-times"></i></button>
+                        </li>
+                        <li class="nav-item px-2 magin__li_mobi">
+                            <a class="nav-link text-dark Home" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark AboutUs" asp-controller="AboutUs" asp-action="Index">Về chúng tôi</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark Solutions" asp-controller="Solutions" asp-action="Index">Giải pháp & Dịch vụ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark Project" asp-controller="Project" asp-action="Index">Dự án</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark Blog" asp-controller="Blog" asp-action="Index">Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark Requiment" asp-controller="Requiment" asp-action="Index">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark ContactUs" asp-controller="ContactUs" asp-action="Index">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="magin_body_responsive">
+        @RenderBody()
+    </div>
+
+    <div class="footer-1 bg-white bg-light box-shadow" id="page-9" style="background-color: aqua;">
+        <div class="container mx-auto row">
+            <div class="col-12 col-md-5 col-lg-5" style="margin-top:50px">
+                <div class="px-1">
+                    <img src="~/image/Group 154.png" style="width: 150px" />
+                    <p class="mt-4">
+                        Mobiplus là một trong những công ty về công nghệ. Làm việc theo nhóm có cấu trúc và hiệu quả về chi phí. Chúng tôi ra đời với sứ mệnh phục vụ khách hàng với dịch vụ hợp lý, đưa ra những giải pháp hữu ı́ch phù hợp với nhu cầu của khách hàng.
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                        <span class="font-weight-bold">Adress:</span> Tầng 6, tòa nhà 130, Nguyễn Đức Cảnh, P. Tương Mai, Q. Hoàng Mai, Tp. Hà Nội
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                        <span class="font-weight-bold">Phone:</span> 0934051826
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                        <span class="font-weight-bold">Email:</span> <a class="link-hover " href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkHXzCvgvWcjgrNXJQxkzPlfQfVfFWspPgwWHCDMcNHKFlvxPGMLthRqLlLhwcmfdfRDNt">contact@m2w.vn</a>
+                    </p>
+                </div>
+                <a href="#" class="btn facebook" data-toggle="tooltip" title="Facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="btn instagram" data-toggle="tooltip" title="Instagram"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="btn skypeblue" data-toggle="tooltip" title="Skype">
+                    <i class="ri-skype-fill"></i>
+                </a>
+                <a href="#" class="btn facebook" data-toggle="tooltip" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="#" class="btn facebook" data-toggle="tooltip" title="Slack">
+                    <i class="ri-slack-line"></i>
+                </a>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3" style="margin-top:50px">
+                <h4>Liên kết nhanh</h4>
+                <p class="mt-4">
+                    <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                    <a class="link-hover text-dark" asp-controller="home" asp-action="index">Trang chủ</a>
+                </p>
+                <p>
+                    <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                    <a class="link-hover text-dark" asp-controller="AboutUs" asp-action="index">Về chúng tôi</a>
+
+                </p>
+                <p>
+                    <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                    <a class="link-hover text-dark" asp-controller="Solutions" asp-action="index">Giải pháp & Dịch vụ</a>
+
+                </p>
+                <p>
+                    <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                    <a class="link-hover text-dark" asp-controller="Project" asp-action="index">Dự án của chúng tôi</a>
+
+                </p>
+                <p>
+                    <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                    <a class="link-hover text-dark" asp-controller="Blog" asp-action="index">Blog</a>
+                </p>
+                <p>
+                    <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                    <a class="link-hover text-dark" asp-controller="Requiment" asp-action="index">Tuyển dụng</a>
+                </p>
+                <p>
+                    <i class="ri-checkbox-blank-circle-line font-weight-bold" style="color:#00c9fb"></i>&nbsp;
+                    <a class="link-hover text-dark" asp-controller="ContactUs" asp-action="index">Liên hệ</a>
+                </p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 px-0" style="margin-top:50px; position: relative">
+                @*scroll up*@
+                <a id="back-to-top" class="back-to-top back-to-top1 back-to-top-mobi" href="#"><i class="fas fa-arrow-up"></i></a>
+                @*end*@
+                <div class="col-md-12 col-lg-12 px-1" id="footer-card">
+                    <h4>Tin tuyển dụng</h4>
+                    <div class="card mt-2 col-12 bg-white box-shadow px-2 mt-4" style="border: #ffffFf; border-radius: 16px;">
+                        <a asp-controller="Requiment" asp-action="detail" asp-route-id="1">
+                            <div class="row">
+                                <div class="col-3 my-auto">
+                                    <img class="w-100" src="~/image/Service/Briefcase_perspective_matte.png" />
+                                </div>
+                                <div class="col-9 my-auto px-0">
+                                    <p class="footer-card-text" style=" margin-top: 1rem; margin-bottom: 1rem; color:black">
+                                        <span class="card-title-2"><strong>UI/UX  Designer</strong></span>
+                                        <br /><i class="ri-user-add-line" style="color:#00C9FB"></i>&nbsp;
+                                        <span style="color:#7D82A1">2 Người</span>
+                                        <br /><i class="ri-time-line" style="color:#00C9FB"></i>&nbsp;
+                                        <span style="color:#7D82A1">01/10/2021</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card mt-2 col-12 bg-white box-shadow px-2" style="border: #ffffFf; border-radius: 16px;">
+                        <a asp-controller="Requiment" asp-action="detail" asp-route-id="2">
+                            <div class="row">
+                                <div class="col-3 my-auto">
+                                    <img class="w-100" src="~/image/Service/Briefcase_perspective_matte.png" />
+                                </div>
+                                <div class="col-9 my-auto px-0">
+                                    <p class="footer-card-text" style=" margin-top: 1rem; margin-bottom: 1rem; color:black">
+                                        <span class="card-title-2"><strong>Test Fresher</strong></span>
+                                        <br /><i class="ri-user-add-line" style="color:#00C9FB"></i>&nbsp;
+                                        <span style="color:#7D82A1">2 Người</span>
+                                        <br /><i class="ri-time-line" style="color:#00C9FB"></i>&nbsp;
+                                        <span style="color:#7D82A1">30/09/2021</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card mt-2 col-12 bg-white box-shadow px-2" style="border: #ffffFf; border-radius: 16px;">
+                        <a asp-controller="Requiment" asp-action="detail" asp-route-id="3">
+                            <div class="row">
+                                <div class="col-3 my-auto">
+                                    <img class="w-100" src="~/image/Service/Briefcase_perspective_matte.png" />
+                                </div>
+                                <div class="col-9 my-auto px-0">
+                                    <p class="footer-card-text" style=" margin-top: 1rem; margin-bottom: 1rem; color:black">
+                                        <span class="card-title-2"><strong>Test Leader</strong></span>
+                                        <br /><i class="ri-user-add-line" style="color:#00C9FB"></i>&nbsp;
+                                        <span style="color:#7D82A1">1 Người</span>
+                                        <br /><i class="ri-time-line" style="color:#00C9FB"></i>&nbsp;
+                                        <span style="color:#7D82A1">01/12/2021</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary col-12 mt-4">
+            <p class="text-center text-white my-auto">Copyright &copy; 2021 Mobiplus. All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6qXQQnXHMJEglRAIh4-sbcX8HkWDrO7A"></script>
+    <script src="~/lib/anime-master/lib/anime.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/OwlCarousel2/owl.carousel.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/dist/main.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            var pathName = window.location.pathname;
+            if (pathName == "/") {
+                $(".Home").addClass("active")
+            }
+            if (pathName == "/AboutUs") {
+                $(".AboutUs").addClass("active")
+            }
+            if (pathName == "/Solutions") {
+                $(".Solutions").addClass("active")
+            }
+            if (pathName == "/Project") {
+                $(".Project").addClass("active")
+            }
+            if (pathName == "/Blog") {
+                $(".Blog").addClass("active")
+            }
+            if (pathName == "/Requiment") {
+                $(".Requiment").addClass("active")
+            }
+            if (pathName == "/ContactUs") {
+                $(".ContactUs").addClass("active")
+            }
+        })
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+</html>
