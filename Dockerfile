@@ -24,6 +24,8 @@ WORKDIR /app
 COPY --from=publish /app .
 #RUN ls --recursive
 
+EXPOSE 5058
+
 #ENV AppSettings__DebugMode=True
-ENV ASPNETCORE_URLS=http://+:6000
+ENV ASPNETCORE_URLS=http://+:5058
 ENTRYPOINT ["dotnet", "Mobiplus.dll"]
